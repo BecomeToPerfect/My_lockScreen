@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.phones">
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="핸드폰 잠금"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"><!-- 상태바 없애는 코드 -->
+        <activity android:name=".First_SC" android:label="핸드폰 잠금"> <!-- application:label 부분과 activity에 label을 넣어서 어플의 이름을 바꿀 수 있음 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> <!-- intent-filter 부분은 어플 시작 화면을 표시 하는 곳! -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".love_SC"></activity>
+        <activity android:name=".Love_Locksc"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <receiver android:name=".LockScR"></receiver>
+        <activity android:name=".Screenlock"></activity>
+        <service android:name=".ScreenService"></service>
+    </application>
+
+</manifest>

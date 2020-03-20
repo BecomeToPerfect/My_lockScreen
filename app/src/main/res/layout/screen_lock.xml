@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EBBC"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SeekBar
+            android:id="@+id/slide"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:max="100"
+            android:thumb="@drawable/rice"
+            android:thumbOffset="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.924"
+            tools:ignore="MissingConstraints" />
+        <!--thumb 위치 조정 -로 갈수록 오른쪽-->
+
+        <ImageView
+            android:id="@+id/back_rice"
+            android:layout_width="174dp"
+            android:layout_height="197dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.647"
+            app:srcCompat="@drawable/backrice"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/now_time"
+            android:layout_width="186dp"
+            android:layout_height="49dp"
+            android:background="#F3EBBC"
+            android:enabled="false"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="45dp"
+            app:layout_constraintBottom_toTopOf="@+id/back_rice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.134"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.488" />
+
+        <TextView
+            android:id="@+id/now_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F3EBBC"
+            android:enabled="false"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toTopOf="@+id/back_rice"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/now_time"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/dydlf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TT"
+            android:textColor="#000000"
+            android:textSize="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toEndOf="@+id/now_date"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.283"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
